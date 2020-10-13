@@ -1013,6 +1013,48 @@ pub struct TimestampSeconds<
     STRICTNESS: formats::Strictness = formats::Strict,
 >(PhantomData<(FORMAT, STRICTNESS)>);
 
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationMilliSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationMilliSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationMicroSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationMicroSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationNanoSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct DurationNanoSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
 /// De/Serialize timestamps as seconds since the UNIX epoch
 ///
 /// De/serialize timestamps as seconds since the UNIX epoch.
@@ -1137,6 +1179,48 @@ pub struct TimestampSeconds<
 /// [feature flag]: https://docs.rs/serde_with/1.5.1/serde_with/guide/feature_flags/index.html
 #[derive(Copy, Clone, Debug, Default)]
 pub struct TimestampSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampMilliSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampMilliSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampMicroSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampMicroSecondsWithFrac<
+    FORMAT: formats::Format = f64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampNanoSeconds<
+    FORMAT: formats::Format = u64,
+    STRICTNESS: formats::Strictness = formats::Strict,
+>(PhantomData<(FORMAT, STRICTNESS)>);
+
+/// TODO
+#[derive(Copy, Clone, Debug, Default)]
+pub struct TimestampNanoSecondsWithFrac<
     FORMAT: formats::Format = f64,
     STRICTNESS: formats::Strictness = formats::Strict,
 >(PhantomData<(FORMAT, STRICTNESS)>);
